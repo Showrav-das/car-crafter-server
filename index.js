@@ -52,6 +52,7 @@ async function run() {
       const result = await detailsCollection.insertOne(information);
       res.json(result);
     })
+    
     // product add
     app.post('/products', async (req, res) => {
       const information = req.body;
